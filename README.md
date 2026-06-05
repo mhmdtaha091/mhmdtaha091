@@ -8,9 +8,9 @@ I'm an AI-native developer: I ship by pairing with frontier models, not in spite
 
 ## What I'm building
 
-**PentestAI** — *not yet public.* An autonomous LangGraph agent that audits web applications for OWASP Top 10 issues. Local Ollama for the brain, HippoRAG knowledge graph for cross-scan context, 30+ in-house scanners under the hood. Security isn't my domain; the project was an excuse to go deep on agentic orchestration. Opening the repo once the README and demo are real, not a moment before.
+**[PentestAI](https://github.com/mhmdtaha091/PentestAI)** — autonomous LangGraph agent that audits web apps for OWASP Top 10 issues. Local Ollama, HippoRAG knowledge graph over OWASP / MITRE / CVE, 30+ in-house scanners. Security isn't my domain — this was an excuse to go deep on agentic orchestration. Research code, honestly framed.
 
-**Third Eye** — *not yet public.* A multi-modal assistant: YOLO vision, voice in and out, Gemini for reasoning, all glued together by a small hardware-abstraction layer. Built to learn how the pieces fit end-to-end.
+**[Third Eye](https://github.com/mhmdtaha091/third-eye)** — assistive vision-and-voice companion: YOLOv8 + a VLM for scene understanding, `faster-whisper` for listening, Gemini for reasoning, Piper TTS for speaking, DeepFace for known-person recognition. Flask + ngrok lets it run with a phone as the camera. A ubiquitous-computing experiment biased toward navigation help for visually-impaired users.
 
 **Web work that's live:**
 [nova-studio](https://github.com/mhmdtaha091/nova-studio) · [luxe-stays](https://github.com/mhmdtaha091/luxe-stays) · [synapse-ai](https://github.com/mhmdtaha091/synapse-ai) · [pulse-blog](https://github.com/mhmdtaha091/pulse-blog) · [sole-sneakers](https://github.com/mhmdtaha091/sole-sneakers) · [ember-and-oak](https://github.com/mhmdtaha091/ember-and-oak)
