@@ -1,29 +1,26 @@
 # Muhammad Taha Khan
 
-I build with AI — agents, multi-modal systems, and the glue that turns prompts into shipped products.
-
-I'm an AI-native developer. I ship by pairing with frontier models, not in spite of them. My stack leans toward **LangGraph, MCP servers, Supabase, and webhooks** — whatever puts a working thing in front of a user fastest.
+I build AI agent systems and the tooling that measures them — LLM agents, RAG pipelines, and the eval harnesses that keep them honest. My stack leans toward **LangGraph, MCP servers, FastAPI, and local/quantized inference** — whatever puts a measured, working system in front of a user.
 
 ---
 
 ## What I'm building
 
-**[PentestAI](https://github.com/mhmdtaha091/PentestAI)** — autonomous web pentest agent on consumer hardware. LangGraph orchestrator, **23-tool MCP server**, HippoRAG knowledge graph over OWASP / MITRE ATT&CK / CVE, 30+ in-house scanners. Runs a fine-tune-free Qwen 2.5-coder-14B locally — a niche no published peer occupies. Demo GIF + comparison playbook against PentestGPT, VulnBot, CHECKMATE, XBOW, and others in the repo.
+**[PentestAI](https://github.com/mhmdtaha091/PentestAI)** — autonomous web-pentest agent that runs entirely on consumer hardware. LangGraph orchestrator, **23-tool MCP server**, HippoRAG knowledge graph over OWASP / MITRE ATT&CK / CVE, and 35 in-house scanners, driving a fine-tune-free **Qwen2.5-Coder-14B on 12 GB VRAM**. On the DVWA benchmark it clears every Low and Medium module and covers **84.6% at High** — a local-model niche no published peer occupies.
 
-**[Helping Eye](https://github.com/mhmdtaha091/helping-eye)** — assistive vision-and-voice companion. **YOLOv8** + a vision-language model for scene understanding, `faster-whisper` for listening, **Gemini** for reasoning, Piper TTS for speaking, **DeepFace** for known-person recognition. Flask + ngrok lets it run with a phone as the camera. A ubiquitous-computing experiment biased toward navigation help for visually-impaired users.
+**[Flight Recorder](https://github.com/mhmdtaha091/flight-recorder)** — local-first tracing, replay, and eval harness for AI agents. Records every LLM call, tool call, token, cost, and latency; replays runs deterministically against a keyed store; scores outputs against golden suites and flags regressions between versions. Built because most "agent" projects collapse the moment you measure them honestly.
 
-**Web work:**
-[nova-studio](https://github.com/mhmdtaha091/nova-studio) · [luxe-stays](https://github.com/mhmdtaha091/luxe-stays) · [synapse-ai](https://github.com/mhmdtaha091/synapse-ai) · [pulse-blog](https://github.com/mhmdtaha091/pulse-blog) · [sole-sneakers](https://github.com/mhmdtaha091/sole-sneakers) · [ember-and-oak](https://github.com/mhmdtaha091/ember-and-oak)
+**[SignBridge](https://github.com/mhmdtaha091/SignBridge)** — bilingual (ASL + PSL) sign-language tutor running entirely in the browser. MediaPipe hand landmarks + a TF.js temporal model recognize signs **on-device — no camera data leaves the machine** — with a three.js 3D avatar tutor that scores your form via dynamic time warping. **[▶️ Live demo](https://signbridge-kappa.vercel.app)**
 
-Front-ends with motion design and interaction polish. Built fast, shipped fast.
+**[BugScout](https://github.com/mhmdtaha091/bugscout)** — autonomous web QA agent. Crawls a site, discovers user flows, detects functional and accessibility bugs (axe-core), and emits **deterministic Playwright regression suites** — byte-identical output for the same input. MCP-native.
 
 ---
 
 ## Currently working on
 
-- **More MCP servers** — exposing real capabilities to LLMs without the usual leaky abstractions.
-- **Eval harnesses for agent tool-calling** — because most "agent" projects collapse the moment you measure them honestly.
-- **Benchmarking PentestAI** against the published auto-pentest landscape (PentestGPT, PentestAgent, VulnBot, CHECKMATE, AutoPentester) using the methodology in [`docs/research.md`](https://github.com/mhmdtaha091/PentestAI/blob/main/docs/research.md).
+- **Benchmarking PentestAI** against the published auto-pentest landscape (PentestGPT, VulnBot, CHECKMATE, XBOW) using the methodology in [`docs/research.md`](https://github.com/mhmdtaha091/PentestAI/blob/main/docs/research.md).
+- **Flight Recorder** — dogfooding the harness across my own agents to build a reproducible eval baseline.
+- **SignBridge PSL** — extending the Pakistan Sign Language dataset and the cross-source generalization study.
 
 ---
 
